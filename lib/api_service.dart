@@ -69,7 +69,7 @@ class APIServices {
     String id = pid.toString();
     String quantity = qty.toString();
     var response = await client.post(
-        Uri.parse("https://brasabeer.com/wp-json/cocart/v2/cart/add-item"),
+        Uri.parse("https://yourdomainname/wp-json/cocart/v2/cart/add-item"),
         headers: requestHeaders,
         body: {
           "id": id,
@@ -94,7 +94,7 @@ class APIServices {
     };
 
     var response = await client.post(
-        Uri.parse("https://brasabeer.com/wp-json/jwt-auth/v1/token"),
+        Uri.parse("https://yourdomainname.com/wp-json/jwt-auth/v1/token"),
         headers: requestHeaders,
         body: {
           "username": username,
